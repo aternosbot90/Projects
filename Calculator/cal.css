@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+  }
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .calculator {
+  background-color: #333;
+  box-shadow: 0 0 10px #222;
+}
+
+body.dark-mode button {
+  background-color: #555;
+  color: #eee;
+  border: 1px solid #666;
+}
+
+body.dark-mode button:hover {
+  background-color: #777;
+}
+
+/* Toggle switch styles */
+.dark-mode-switch {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  font-family: Arial, sans-serif;
+  user-select: none;
+  color: #222;
+}
+
+.dark-mode-switch input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+/* Style display area in dark mode */
+body.dark-mode #display {
+  background-color: #222;  /* dark background */
+  color: white;            /* white text */
+  border: 1px solid #555;  /* subtle border for contrast */
+}
+
+  /* Keep your existing clear button red */
+button.clear {
+  background-color: #e74c3c; /* bright red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.clear:hover {
+  background-color: #791c11; /* darker red on hover */
+}
+
+/* In dark mode, keep it red but maybe a bit darker */
+body.dark-mode button.clear {
+  background-color: #c0392b;
+  color: #fff;
+}
+body.dark-mode button.clear:hover {
+  background-color: #7a2218;
+  color: #fff;
+}
+
+  
+  .calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    width: 220px;
+  }
+  
+  #display {
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #ccc;
+  }
+  
+  .clear {
+    grid-column: span 4;
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
